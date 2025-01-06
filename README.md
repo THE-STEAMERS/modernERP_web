@@ -1,100 +1,62 @@
-## AriaDocs - Documentation Template
+# 📊 **SmartAccounts**  
+### Simplifying Accounting with GST Compliance and Beyond  
 
-This feature-packed documentation template, built with Next.js, offers a sleek and responsive design, perfect for all your project documentation needs.
+![License](https://img.shields.io/badge/license-MIT-blue) ![Build](https://img.shields.io/badge/build-passing-brightgreen) ![Version](https://img.shields.io/badge/version-1.0.0-lightgrey)  
 
-<img src="./public/public-og.png" />
+---
 
-<br/>
+## 🚀 **Overview**  
+**SmartAccounts** is a modern, feature-rich accounting solution designed for SMEs, freelancers, and businesses looking for an intuitive way to manage their finances. With integrated GST compliance, inventory tracking, and AI-powered insights, SmartAccounts aims to streamline your financial operations while ensuring accuracy and ease of use.  
 
-Here are all versions of the AriaDocs template, each crafted for specific use cases:
+---
 
+## 🧩 **Key Features**  
+### 💼 **Core Functionalities**  
+- Track income, expenses, and manage ledgers effortlessly.  
+- Generate financial reports (Profit & Loss, Balance Sheet, Cash Flow).  
 
-- **Advanced Docs:** A comprehensive template offering extensive features for in-depth documentation needs. Perfect for larger projects that require detailed explanations and advanced configurations.  
-  [Explore the Advanced Docs](https://github.com/nisabmohd/Aria-Docs/tree/master)
+### 🧾 **GST & Tax Compliance**  
+- GST-compliant invoicing and automated tax calculations.  
+- Seamless integration with tax filing portals.  
 
-- **Lite Version:** A streamlined, no-frills template perfect for straightforward documentation needs.  
-  [Explore the Lite Version](https://github.com/nisabmohd/Aria-Docs/tree/minimal-docs)
+### 📦 **Inventory Management**  
+- Monitor stock levels with real-time updates.  
+- Automate purchase and sales orders.  
 
-- **Version with Versioning:** A powerful option for projects that require historical documentation tracking. Manage multiple versions of your docs effortlessly.  
-  [Check out the Versioning Feature](https://github.com/nisabmohd/Aria-Docs/tree/version_docs)
+### 📊 **Analytics & Reports**  
+- Visual dashboards for quick insights.  
+- Predictive analytics to forecast financial trends.  
 
-- **i18n Support Version (WIP):** Designed for international audiences, this version will offer comprehensive multilingual support.  
-  [Preview the i18n Support](https://github.com/nisabmohd/Aria-Docs/tree/i18n-support)
+### 🔒 **Secure & Scalable**  
+- Role-based user access and 2FA for added security.  
+- Scalable cloud-based architecture for growing businesses.  
 
-### Quick Start
+---
 
-You can create a new Ariadocs project using the command:
+## 🌟 **Why Choose SmartAccounts?**  
+- **Ease of Use**: Simple UI/UX for users with any level of expertise.  
+- **Time-Saving**: Automation for recurring tasks like invoicing and tax filing.  
+- **Future-Ready**: AI and blockchain-ready for modern business needs.  
 
-```plaintext
-npx create-aria-doc <project-directory>
-```
+---
 
-### Expected Output
+## 🛠️ **Tech Stack**  
+- **Frontend**: React.js, Tailwind CSS  
+- **Backend**: Node.js, Express.js  
+- **Database**: PostgreSQL for structured data, MongoDB for unstructured data  
+- **Hosting**: AWS with Dockerized microservices  
+- **APIs**: RESTful APIs for third-party integrations  
 
-When you run the CLI, you can expect an output similar to this:
+---
 
-```
-Creating a new Ariadocs project in /path/to/your/project from the master branch...
-Cloning Master (Full Documentation)...
-Ariadocs project successfully created in /path/to/your/project!
+## 📦 **Installation**  
+### Prerequisites  
+- Node.js (v16+)  
+- PostgreSQL (v14+)  
+- MongoDB  
 
-Next steps:
-1. Navigate to your project directory:
-   cd <project-directory>
-2. Install dependencies:
-   // To support React 19, package maintainers will need to test and update their packages to include React 19 as a peer dependency. This is already in progress.
-   npm install --force 
-3. Start the development server:
-   npm run dev
-```
-
-## Getting Started
-
-First, run the development server:
-
-```plaintext
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/nisabmohd/Aria-Docs)
-
-## Key Features
-
-| **Feature**                   | **Description**                                          |
-|-------------------------------|----------------------------------------------------------|
-| MDX Support                   | Write interactive documentation with MDX.                |
-| Nested Pages                  | Organize content in a nested, hierarchical structure.    |
-| Blog Section                  | Include a dedicated blog section.                        |
-| Table of Contents             | Auto-generated TOC for easy navigation.                  |
-| Pagination                    | Split content across multiple pages.                     |
-| Syntax Highlighting           | Highlight code for better readability.                   |
-| Code Line Highlighting & Titles | Highlight specific lines with descriptive titles.      |
-| Interactive Code Blocks       | Language-specific and interactive code display.          |
-| Custom Components             | Embed custom, reusable components in your docs.          |
-| Light & Dark Mode             | Toggle between light and dark themes.                    |
-| Search Functionality          | Quickly find content with a built-in search.             |
-| Code Switcher                 | Switch between code languages or variations.             |
-| Code Copy                     | Copy code blocks with a single click.                    |
-| TOC Observer Highlight        | Highlight active sections in the TOC as you scroll.      |
-| Static Site Generation        | Generate a static, high-performance site.                |
-| SEO-Optimized                 | Structured for optimal search engine indexing.           |
-
-
-## Additional Themes
-
-<img src="./public/halloween.png" alt="halloween" />
-<img src="./public/nebula.png" alt="halloween" />
-<img src="./public/ocean.png" alt="halloween" />
+### Steps  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/yourusername/smartaccounts.git  
+   cd smartaccounts  
