@@ -1,0 +1,78 @@
+---
+title: "System Achitecture"
+description: "This blog post provides a comprehensive guide of the system through System Architecture"
+date: 06-01-2024
+authors:
+  - avatar: "https://ui.shadcn.com/avatars/02.png"
+    handle: venkatesh
+    username: venkatesh21bit
+    handleUrl: "https://github.com/venkatesh21bit"
+cover: "https://img.freepik.com/premium-vector/many-monsters-various-colors-doodle-come-bless-birthday-happy_577083-84.jpg?w=826"
+---
+
+## Introduction: System Architecture
+# System Architecture Overview
+
+## 🏛️ **High-Level Architecture**
+
+### **1. Presentation Layer**  
+- **Web Interface**: Intuitive and user-friendly web application for desktop users.  
+- **Mobile App**: Cross-platform native apps for Android and iOS to enable on-the-go access.  
+- **Admin Dashboard**: Comprehensive dashboard with visualizations for analytics and management.  
+
+### **2. Application Layer**  
+- **Authentication Service**:  
+  - Secure login with two-factor authentication (2FA).  
+  - Role-based access control for users (admin, accountant, viewer).  
+- **Accounting Engine**:  
+  - Handles double-entry bookkeeping and ledger management.  
+  - Automates journal entries, profit & loss, and balance sheet generation.  
+- **Tax Compliance Module**:  
+  - GST invoicing and tax filing integration.  
+  - Support for TDS calculations and filing.  
+- **Inventory Management Module**:  
+  - Tracks stock levels, purchase orders, and sales orders.  
+  - Generates low-stock alerts and inventory reports.  
+- **Notifications Service**:  
+  - Automated email and SMS alerts for overdue payments, low stock, and reminders.  
+
+### **3. Data Layer**  
+- **Relational Database**:  
+  - Stores structured data such as financial transactions, user information, and inventory records.  
+  - Optimized for high-volume read and write operations.  
+- **NoSQL Database**:  
+  - Manages unstructured data like logs, analytics, and user activity.  
+- **Backup & Recovery Service**:  
+  - Daily automated backups to ensure data safety.  
+  - Disaster recovery mechanisms for business continuity.  
+
+### **4. Integration Layer**  
+- **API Gateway**:  
+  - Facilitates secure communication between modules and third-party services.  
+  - Supports RESTful APIs for integrations with banks, tax portals, and payment gateways.  
+- **Third-Party Services**:  
+  - Payment Gateway for online transactions.  
+  - Government APIs for GST and TDS filing.  
+  - SMS/Email Service Providers for notifications.  
+
+### **5. Security Layer**  
+- **Encryption**:  
+  - Data encrypted at rest and in transit using industry standards like AES-256 and TLS.  
+- **Firewall and Threat Monitoring**:  
+  - Protects the system against unauthorized access and cyber threats.  
+- **Access Control**:  
+  - Implements least-privilege access and regular audits.  
+
+---
+
+## 🌟 **Deployment Model**  
+- **Cloud-Based Hosting**:  
+  - Scalable architecture deployed on AWS/Azure/GCP for flexibility and reliability.  
+- **Microservices Architecture**:  
+  - Independent modules for scalability and fault tolerance.  
+
+---
+
+> **By integrating modular components and robust security measures, this architecture ensures a scalable, secure, and user-friendly accounting solution.**  
+
+🚀📁
