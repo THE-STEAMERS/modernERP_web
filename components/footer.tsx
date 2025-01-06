@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
-import { CommandIcon, HeartIcon, TriangleIcon } from "lucide-react";
+import { CommandIcon, HeartIcon} from "lucide-react";
 
 export function Footer() {
   return (
@@ -19,7 +19,7 @@ export function Footer() {
             . The source code is available on{" "}
             <Link
               className="px-1 underline underline-offset-2"
-              href="https://github.com/nisabmohd/Aria-Docs"
+              href="https://github.com/venkatesh21bit/modernERP"
             >
               GitHub
             </Link>
