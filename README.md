@@ -1,4 +1,4 @@
-# 📊 **SmartAccounts**  
+# 📊 **SmartChain ERP**  
 ### Simplifying Accounting with GST Compliance and Beyond  
 
 ![License](https://img.shields.io/badge/license-MIT-blue) ![Build](https://img.shields.io/badge/build-passing-brightgreen) ![Version](https://img.shields.io/badge/version-1.0.0-lightgrey)  
