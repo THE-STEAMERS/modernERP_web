@@ -2,94 +2,148 @@
 title: Project Structure
 description: This section provides an overview of Project Structure.
 ---
+# 📁 SmartChain ERP Project Structure  
 
-## Project Structure Overview
+This document outlines the structure of the **SmartChain ERP** project, designed for modularity, scalability, and ease of maintenance.  
 
-### app
+---
 
-This folder contains the main application code for Next.js, managing layouts, routing, and specific content pages. It is organized to support both the `docs` and `blog` sections, with dedicated pages and layouts for each section.
+## 🗂 Project Structure  
 
-```
-app                         // Main Next.js application folder
-├── page.tsx                // Hero page - the entry point of the app showcasing key content
-├── layout.tsx              // Main layout file, applies global navigation and footer
-├── blog
-│   ├── page.tsx            // Blog list page, displaying all blog posts with titles, dates, and excerpts
-│   └── [slug]
-│       └── page.tsx        // Dynamic blog post page for viewing individual posts with rich content
-└── docs
-    ├── layout.tsx          // Documentation layout with sidebar, providing easy navigation across doc pages
-    └── [[...slug]]         // Catch-all route to handle nested documentation pages, allowing flexible doc structure
-```
+### **1. Core Modules**  
+These are the primary functionalities that drive the platform.  
 
-### components
+- **Authentication & Authorization**  
+  - User registration, login, and role-based access control.  
+  - Two-factor authentication and OAuth integration.  
 
-This folder contains all reusable components used throughout the project. It’s structured to categorize components, making it easy to locate and manage UI elements, Markdown customizations, and navigation.
+- **ERP Core**  
+  - Ledger management, financial reporting, and expense tracking.  
+  - Integration with GST-compliant invoicing.  
 
-```
-components                    // Reusable components
-├── ui                        // ShadCN components, includes standardized UI elements like buttons, forms, and modals
-├── markdown                  // Custom Markdown components for rendering rich Markdown content
-│   ├── CodeBlock.tsx         // Component for rendering syntax-highlighted code blocks
-│   ├── Image.tsx             // Component for handling responsive images in Markdown
-│   └── Table.tsx             // Component to render tables with consistent styling
-└── navbar.tsx                // Main navigation component for the site header, managing links and responsive behavior
-```
+- **Supply Chain Management (SCM)**  
+  - Real-time inventory tracking using IoT.  
+  - Automated stock replenishment and demand forecasting.  
 
-### styles
+- **AI-Powered Automation**  
+  - Predictive analytics for supply and demand management.  
+  - Workflow customization for enhanced efficiency.  
 
-This folder contains global and component-specific CSS files, allowing for project-wide styling consistency and customizations.
+- **Blockchain Module**  
+  - Immutable transaction logging for supply chain traceability.  
+  - Smart contracts for secure vendor agreements.  
 
-```
-styles                        // CSS files
-├── globals.css               // Global CSS file, includes Tailwind base, utilities, and custom global styles
-├── syntax.css                // Syntax highlighting styles, providing consistent code block appearance across the site
-└── overrides.css             // Additional custom styles that override specific component or plugin defaults
-```
+- **ESG Analytics**  
+  - Carbon footprint tracking and reporting.  
+  - Metrics for social and governance compliance.  
 
-### contents
+---
 
-This folder stores all Markdown content for the documentation and blog sections, with clear organization by content type. Each Markdown file represents a single piece of content, with frontmatter used for metadata.
+### **2. Frontend**  
+The user-facing component for interaction with the platform.  
 
-```
-contents                      // Markdown content for blogs and documentation
-├── docs                      // Documentation content, structured to support nested sections and pages
-│   ├── getting-started.md    // Introductory guide for new users
-│   ├── api-reference.md      // API documentation with detailed endpoint descriptions
-│   └── tutorials             // Subfolder for tutorial-style content
-│       └── tutorial-1.md     // Step-by-step tutorial on a specific topic
-└── blogs                     // Blog content, organized by post
-    ├── intro-to-project.md   // Blog post introducing the project and its goals
-    └── dev-updates.md        // Post discussing recent development updates and new features
-```
+- **Technology Stack**: React.js, TypeScript  
+- **Components**:  
+  - Dashboard: Displays key analytics and performance metrics.  
+  - Forms: For data entry, such as invoices, inventory updates, etc.  
+  - Reports: Visualize financial, SCM, and ESG data.  
 
-### public
+---
 
-This folder holds all static assets, such as images, videos, fonts, and icons. These files are directly accessible via URL, so it’s important to avoid sensitive or private content here.
+### **3. Backend**  
+The server-side logic and APIs for handling requests and storing data.  
 
-```
-public                        // Publicly accessible assets
-├── images                    // Image assets, used across various parts of the app
-│   ├── logo.png              // Project logo for branding
-│   └── banner.jpg            // Banner image for the hero section
-├── icons                     // SVG icons for the app
-└── videos                    // Video files for media content, if any
-```
+- **Technology Stack**: Node.js, Express.js  
+- **Key Functionalities**:  
+  - RESTful APIs for CRUD operations.  
+  - AI services for predictive analytics.  
+  - Blockchain integration for supply chain logs.  
+  - ESG data processing.  
 
-### lib
+---
 
-This folder contains helper functions and utilities used across the application, such as Markdown parsing and routing logic. These utilities help keep the codebase clean and organized by separating out common functionality.
+### **4. Database**  
+The storage layer for maintaining structured and unstructured data.  
 
-```
-lib                           // Utility or helper functions
-├── markdown.ts               // Markdown parsing logic, converts Markdown to HTML and adds custom components
-├── routes-config.ts          // Routing configuration for docs, maps URLs to content files for dynamic routing
-└── utils.tsx                 // General utility functions used across the app, such as data formatting and validation helpers
-```
+- **Technology**: PostgreSQL (Relational Database), MongoDB (NoSQL for IoT data).  
+- **Schema**:  
+  - Users: Roles, permissions, and profiles.  
+  - Transactions: Financial records and GST data.  
+  - Inventory: Stock levels, reorder points, and vendor data.  
+  - Blockchain Logs: Immutable records for supply chain transparency.  
 
-### Additional
+---
 
-- **`package.json`**: Contains metadata about the project, dependencies, and scripts for building and running the application.
-- **`tailwind.config.ts`**: Configures Tailwind CSS, allowing customization of theme colors, fonts, and responsive breakpoints specific to this project. 
+### **5. AI & Analytics**  
+The intelligence layer for the platform.  
 
-This structure organizes your project in a way that supports scalability and maintainability, making it easier to navigate and work on different sections of the application.
+- **Components**:  
+  - Predictive Models: For inventory optimization.  
+  - Reporting Dashboards: Generate actionable insights.  
+  - Workflow Customization: Adaptive system behavior based on user activity.  
+
+---
+
+### **6. DevOps**  
+Ensures smooth deployment, scaling, and maintenance.  
+
+- **Tools**:  
+  - Docker: Containerization for isolated environments.  
+  - Kubernetes: Orchestration for scalability.  
+  - CI/CD: Automates testing and deployment pipelines.  
+
+---
+
+### **7. Documentation**  
+Provides resources for understanding and contributing to the project.  
+
+- **Subfolders**:  
+  - API Docs: REST API reference and usage guidelines.  
+  - User Manual: Step-by-step guide for end users.  
+  - Developer Guide: Instructions for contributors.  
+
+---
+
+### **8. Testing**  
+Ensures the platform is reliable and bug-free.  
+
+- **Types of Testing**:  
+  - Unit Tests: Verifies individual modules.  
+  - Integration Tests: Ensures modules work together.  
+  - Performance Tests: Assesses scalability under load.  
+
+- **Tools**: Jest, Mocha, Postman for API testing.  
+
+---
+
+### **9. Deployment**  
+The process of making the platform available for use.  
+
+- **Environments**:  
+  - Development: Local environment for developers.  
+  - Staging: Pre-production environment for testing.  
+  - Production: Live platform for end-users.  
+
+- **Cloud Provider**: AWS or Google Cloud for hosting services.  
+
+---
+
+## 🛠 Development Workflow  
+
+1. **Plan**: Define features and milestones using Agile methodology.  
+2. **Develop**: Build features and modules in isolated branches.  
+3. **Test**: Execute unit, integration, and performance tests.  
+4. **Deploy**: Merge changes to the main branch and push to production.  
+
+---
+
+## 🌟 Contribute  
+
+We welcome contributions to make **SmartChain ERP** even better!  
+1. Fork the repository.  
+2. Create a feature branch.  
+3. Submit a pull request with your changes.  
+
+---
+
+Ready to transform how SMEs manage their operations? Dive into **SmartChain ERP** today!  
