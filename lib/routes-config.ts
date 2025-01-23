@@ -23,6 +23,7 @@ export const ROUTES: EachRoute[] = [
         href: "/installation",
       },
       { title: "Quick Start Guide", href: "/quick-start-guide" },
+      { title:"Design",href: "/design",items:[{ title:"SchemaDiagram",href:"/schemadiagram"}]}
       
       
     ],
