@@ -1,6 +1,36 @@
-Modern ERP Platform
+Modern ERP WebPage:
 
 Modern ERP is a high-level, feature-rich ERP system designed to provide businesses with a scalable and user-friendly platform to streamline operations and manage business processes efficiently. Built with advanced technologies, this platform ensures ease of development, integration, and usage, catering to the needs of growing enterprises.
+
+## Routes Overview
+
+### 1. **Getting Started**
+   - **Introduction**: Overview of the SmartChain ERP platform, its purpose, and its core value propositions.
+   - **Key Features**: Detailed breakdown of the platform's capabilities, including:
+     - Core functionalities like ledger management and financial reports.
+     - GST & Tax compliance.
+     - Invoicing and billing tools.
+     - Inventory management.
+     - Analytics & Reports.
+     - Supply Chain Management.
+
+### 2. **Project Structure**
+   - Explains the folder and file structure of the SmartChain ERP application.
+   - Useful for developers and contributors looking to understand the codebase.
+
+### 3. **Installation**
+   - Step-by-step guide on how to set up SmartChain ERP.
+   - Includes prerequisites, system requirements, and troubleshooting tips.
+
+### 4. **Quick Start Guide**
+   - A simplified guide for new users to get up and running with the platform.
+   - Covers initial setup, basic navigation, and accessing primary features.
+
+### 5. **Design**
+   - Insight into the design principles and architecture of SmartChain ERP.
+   - Highlights UI/UX considerations and the technical stack.
+
+---
 
 🌟 Key Features
 
@@ -26,24 +56,32 @@ Frontend: Built with React.js and Tailwind CSS for an intuitive and responsive U
 Backend: Developed with Node.js and Express.js for scalable server-side logic.
 Database: PostgreSQL handles structured data like financial records, while MongoDB stores unstructured data for analytics and logs.
 Hosting: Deployed on Vercel with Dockerized microservices, ensuring smooth and scalable performance.
-📦 Installation
 
-Prerequisites: Install Node.js (v16+), PostgreSQL (v14+), and MongoDB.
-Clone the repository:
-bash
-Copy
-Edit
+## 📦 Setup Instructions
 
-git clone https://github.com/your-repo/modern-erp.git  
-cd modern-erp  
+### Prerequisites
 
-npm install  
+Before starting, ensure you have the following installed on your system:
 
-DATABASE_URL=your_postgresql_connection_string  
-MONGODB_URI=your_mongodb_connection_string  
-JWT_SECRET=your_secret_key  
+- [Node.js](https://nodejs.org/) (v14 or higher recommended)
+- [Git](https://git-scm.com/)
+- A package manager (e.g., npm or yarn)
 
-npm run dev  
+---
+
+### Steps to Set Up
+
+###Clone the Repository
+
+Begin by cloning the SmartChain ERP documentation repository to your local machine:
+
+git clone https://github.com/venkatesh21bit/modernERP
+
+cd modernERP
+
+npm i
+
+npm run dev
 
 Access the platform locally at http://localhost:3000.
 
